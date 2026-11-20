@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Never commit Meta's data or checkpoint (download with python -m emg_kit.download)
+*.hdf5
+*.ckpt
+emg_data/
+emg_models/
+
+# Generated
+space/
+results/*
+!results/baseline_10users.csv
+!results/per_user_accuracy_10users.png
+results_*.csv
+/per_user_accuracy.png
+models/*.pt
+!models/.gitkeep
+flagged/
+.gradio/
